@@ -14,7 +14,7 @@ cd bpo-ai-service
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
-cp .env.example .env
+cp .env
 # Editar .env y poner tu GROQ_API_KEY
 ```
 
@@ -30,7 +30,7 @@ Documentación interactiva: http://localhost:8000/docs
 
 ## Ejemplos de uso
 
-### ✅ Caso 1 — Gestión externa (incidente técnico)
+### Caso 1 — Gestión externa (incidente técnico)
 
 ```bash
 curl -X POST http://localhost:8000/api/v1/procesar \
@@ -61,7 +61,7 @@ curl -X POST http://localhost:8000/api/v1/procesar \
 
 ---
 
-### ❌ Caso 2 — Información incompleta
+### Caso 2 — Información incompleta
 
 ```bash
 curl -X POST http://localhost:8000/api/v1/procesar \
@@ -89,7 +89,7 @@ curl -X POST http://localhost:8000/api/v1/procesar \
 
 ---
 
-### 🏢 Caso 3 — Empresa no parametrizada (error controlado)
+### Caso 3 — Empresa no parametrizada (error controlado)
 
 ```bash
 curl -X POST http://localhost:8000/api/v1/procesar \
@@ -111,7 +111,7 @@ curl -X POST http://localhost:8000/api/v1/procesar \
 
 ---
 
-### 🚚 Caso 4 — MENSAJERIA DEL VALLE (prioridad externa)
+### Caso 4 — MENSAJERIA DEL VALLE (prioridad externa)
 
 ```bash
 curl -X POST http://localhost:8000/api/v1/procesar \
@@ -143,7 +143,7 @@ curl -X POST http://localhost:8000/api/v1/procesar \
 
 ---
 
-### 💬 Caso 5 — Respuesta directa (consulta informativa)
+### Caso 5 — Respuesta directa (consulta informativa)
 
 ```bash
 curl -X POST http://localhost:8000/api/v1/procesar \
