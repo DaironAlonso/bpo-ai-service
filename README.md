@@ -151,7 +151,7 @@ curl -X POST http://localhost:8000/api/v1/procesar \
   -d '{
     "compania": "GASES DEL ORINOCO",
     "solicitud_id": "REQ-005",
-    "solicitud_descripcion": "Buenos dias, quisiera saber cual es el horario de atencion al cliente de la empresa y los canales de contacto disponibles."
+    "solicitud_descripcion": "Buenos dias mi nombre es Claudia. Quisiera saber cual es el horario de atencion al cliente y los canales de contacto disponibles."
   }'
 ```
 
